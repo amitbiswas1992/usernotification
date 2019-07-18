@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
    
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (Usnotification, error) in
-            print("notification \(Usnotification)")
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (result, error) in
+            print("Result:  \(result)")
         }
        
         return true
